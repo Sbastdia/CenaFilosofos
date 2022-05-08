@@ -3,6 +3,7 @@ from filosofos_beta import *
 
 
 
+
 class Ventana():
     def __init__(self):
         self.window= tk.Tk()
@@ -31,14 +32,20 @@ class Ventana():
           etiqueta.place(x=350, y=50+i*20)
           etiqueta2= tk.Label(self.window, text= "Tenedor " + str(i))
           etiqueta2.place(x=350, y=200+i*20)
-
-          
           self.lista2.append(etiqueta)
           self.lista3.append(etiqueta2)
+                   
           
         tk.Label(self.window, text= "¿Cuántas veces han comido?").place(x=450, y= 20)
+        tk.Label(self.window, text= "Entra a comer", background= "pink").place(x=450, y= 200)
+        tk.Label(self.window, text= "Tiene un tenedor", background= "blue").place(x=450, y= 230)
+        tk.Label(self.window, text= "Está comiendo", background= "yellow").place(x=450, y= 260)
+        tk.Label(self.window, text= "Está pensando", background= "white").place(x=450, y= 290)
+        tk.Label(self.window, text= "Terminó de comer", background= "light steel blue").place(x=450, y= 320)
+        tk.Label(self.window, text= "Tenedor ocupado", background= "green").place(x=450, y= 350)
+        tk.Label(self.window, text= "Tenedor libre", background= "grey").place(x=450, y= 380)
 
-              
+                
     def visualización(self,texto):
         self.texto.insert(tk.END, str(texto)+"\n")
     def ocultar(self):

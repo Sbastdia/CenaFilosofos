@@ -28,6 +28,15 @@ class filosofo(threading.Thread):
     def __del__(self):
         self.ventana.visualización("FILOSOFO {0} - Se para de la mesa".format(self.id))  #NECESARIO PARA SABER CUANDO TERMINA EL THREAD
 
+    def codigoColores(self):
+      self.ventana.lista4.config(bg= "blue")
+      self.ventana.lista4.config(bg= "pink")
+      self.ventana.lista4.config(bg= "white")
+      self.ventana.lista4.config(bg= "yellow")
+      self.ventana.lista4.config(bg= "greem")
+      self.ventana.lista4.config(bg= "grey")
+      
+
     def pensar(self):
         time.sleep(random.randint(0,5)) #CADA FILOSOFO SE TOMA DISTINTO TIEMPO PARA PENSAR, ALEATORIO
 
@@ -73,6 +82,8 @@ class filosofo(threading.Thread):
         self.ventana.lista[self.id].delete(0, END)
         self.ventana.lista[self.id].insert(0, self.veces)
         self.ventana.lista2[self.id].config(bg= "light steel blue")
+
+    
         
       
     def run(self):
