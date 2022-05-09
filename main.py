@@ -37,13 +37,14 @@ class Ventana():
                    
           
         tk.Label(self.window, text= "¿Cuántas veces han comido?").place(x=450, y= 20)
-        tk.Label(self.window, text= "Entra a comer", background= "pink").place(x=450, y= 200)
-        tk.Label(self.window, text= "Tiene un tenedor", background= "blue").place(x=450, y= 230)
-        tk.Label(self.window, text= "Está comiendo", background= "yellow").place(x=450, y= 260)
+        tk.Label(self.window, text= "Código de colores:").place(x=450, y= 200)
+        tk.Label(self.window, text= "Entra a comer", background= "pink").place(x=450, y= 230)
+        tk.Label(self.window, text= "Tiene un tenedor", background= "blue").place(x=450, y= 250)
+        tk.Label(self.window, text= "Está comiendo", background= "yellow").place(x=450, y= 270)
         tk.Label(self.window, text= "Está pensando", background= "white").place(x=450, y= 290)
-        tk.Label(self.window, text= "Terminó de comer", background= "light steel blue").place(x=450, y= 320)
-        tk.Label(self.window, text= "Tenedor ocupado", background= "green").place(x=450, y= 350)
-        tk.Label(self.window, text= "Tenedor libre", background= "grey").place(x=450, y= 380)
+        tk.Label(self.window, text= "Terminó de comer", background= "light steel blue").place(x=450, y= 310)
+        tk.Label(self.window, text= "Tenedor ocupado", background= "green").place(x=450, y= 330)
+        tk.Label(self.window, text= "Tenedor libre", background= "grey").place(x=450, y= 350)
 
                 
     def visualización(self,texto):
